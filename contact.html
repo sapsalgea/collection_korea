@@ -8,12 +8,13 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="sub-page-style.css"/>
+    <link rel="stylesheet" href="contact.css"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
     <script src="main.js" defer></script>
 
-    <script src="includeHTML_load.js" defer></script>
 
     
 
@@ -40,11 +41,11 @@
         <div class="navbar__menu__box">
 
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active" data-link="#home"><a href="/index.html" class="footer__a__tag active">Home</a></li>
+                <li class="navbar__menu__item active" data-link="#home"><a href="/index.html" class="footer__a__tag">Home</a></li>
                 <li class="navbar__menu__item" data-link="#about"><a href="/aboutus.html" class="footer__a__tag">About Us</a></li>
                 <li class="navbar__menu__item"data-link="#work"><a href="/work.html" class="footer__a__tag">Work</a></li>
                 <li class="navbar__menu__item"data-link="#recruit"><a href="/recruit.html" class="footer__a__tag">Recruit</a></li>
-                <li class="navbar__menu__item"data-link="#contact"><a href="/contact.html" class="footer__a__tag">Contact Us</a></li>
+                <li class="navbar__menu__item"data-link="#contact"><a href="/contact.html" class="footer__a__tag active">Contact Us</a></li>
             </ul>
             
 
@@ -56,17 +57,152 @@
 
         </div>
 
+        <a href="#" class="navbar__toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+
 
     </nav>
 
+
+    <!--top-intro-->
+
+    <div id="top__intro">
+        <h2 class="top__title">컬렉션코리아 문의하기</h2>
+        <p class="top__sub__title">Collection Korea CONTACT US</p>
+    </div>
+
+
+
+    <!--contact us-->
+
+    <!-- Learning From Traversy media	 -->
+
+<div class="container">
+    <h1 class="brand">
+        <span>CONTACT US</span>
+    </h1>
+    <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+            <h3 class="company__text">컬렉션코리아</h3>
+            <ul>
+                
+                <li><i class="fa fa-phone company__text"></i> 070-8028-1177</li>
+                <li><i class="fa fa-envelope company__text"></i> admin@collectionkorea.com</li>
+            </ul>
+        </div>
+        <div class="contact">
+
+            <form>
+                <p>
+                    <label class="contact__label">이름</label>
+                    <input type="text" name="name">
+                </p>
+                <p>
+                    <label class="contact__label">업체명</label>
+                    <input type="text" name="company">
+                </p>
+                <p>
+                    <label class="contact__label">이메일</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label class="contact__label">연락처</label>
+                    <input type="text" name="phone">
+                </p>
+                <p class="full">
+                    <label class="contact__label">내용</label>
+                    <textarea name="message" rows="5"></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit">제출하기</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
     
     
+
+
+
+    
+
+
 
 
     
 
     
-    <include src="footer.html"></include>
+    
+
+
+
+
+    <footer id="footer">
+
+        <div class="footer__nav">
+
+            <a class="footer__navbar__logo" href="/index.html">
+                <img class="footer__navbar__logo__img" src="imgs/logo.png" alt="로고" >
+                <h2 class="footer__navbar__logo__title">COLLECTION KOREA</h2>
+            </a>
+
+            <div class="footer__navbar_right">
+
+
+
+                <div class="footer__navbar__menu">
+
+                    
+
+                    <ul class="footer__navbar__menu__items">
+                        <li class="footer__navbar__menu__item" data-link="#home"><a href="/index.html" class="footer__a__tag active">HOME</a></li>
+                        <li class="footer__navbar__menu__item" data-link="#about"><a href="/aboutus.html" class="footer__a__tag">ABOUT US</a></li>
+                        <li class="footer__navbar__menu__item"data-link="#work"><a href="/work.html" class="footer__a__tag">WORK</a></li>
+                        <li class="footer__navbar__menu__item"data-link="#recruit"><a href="/recruit.html" class="footer__a__tag">RECRUIT</a></li>
+                        <li class="footer__navbar__menu__item"data-link="#contact"><a href="/contact.html" class="footer__a__tag">CONTACT US</a></li>
+                    </ul>
+                
+                    <div class="footer__navbar__menu__lang__betweenbar"></div>
+
+                    <ul class="footer__navbar__lang">
+                        <li class="footer__navbar__lang__item"><a href="/index.html" class="footer__a__tag active">KO</a></li>
+                        <li class="footer__navbar__lang__item"><a href="" class="footer__a__tag">EN</a></li>
+                        <li class="footer__navbar__lang__item"><a href="" class="footer__a__tag">IND</a></li>
+                    </ul>
+
+                    
+
+                    
+                </div>
+
+
+
+                <div class="footer__navbar__menu__info__boundary"></div>
+
+                <div class="footer__our__info__pc">
+                    <p class="footer__our__info__text">
+                        <br/>
+                        경기도 광명시 가림로 219번길 18 B02 | 대표이사 이권섭 | <span class="footer__our__info__text__br">사업자등록번호 322-86-02130</span><br/>
+                        Tel +82 2 0000 0000 | 이메일 admin@collectionkorea.com</p>
+
+                    <p class="footer__our__info__text">
+                        <br/>
+                        Copyright © 2020-2021 [COLLECTION KOREA] All Rights Reserved.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        
+    </footer>
     
 
 

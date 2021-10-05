@@ -1,0 +1,359 @@
+/* Global */
+
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+  
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+  
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+
+    /* Size */
+    --size-border-radius : 4px;
+
+    /*Annimation*/
+    --animation-duration: 300ms;
+  }
+
+
+/*about us page*/
+
+
+html, body, #ceo__intro { height: 100%; }
+body { margin: 0; }
+
+
+
+
+#ceo__intro {
+    width:100%;
+    background: #0f0f0f;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ceo_image{
+    border-radius: 10px;
+    margin-top: 55px;
+    height: 600px;
+    width: 480px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
+.ceo__text__container{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+
+.introduce__text{
+    font-size: 15px;
+}
+
+.ceo__text{
+    font-size: 45px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.ceo__speech{
+    font-size: 16px;
+    max-width: 600px;
+    margin-bottom: 70px;
+}
+
+.ceo__name__container{
+    display: flex;
+    align-items: center;
+}
+
+.ceo__small__text{
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.ceo__name{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.introduce__text, .ceo__text, .ceo__speech, .ceo__small__text, .ceo__name {
+  color: white;
+}
+
+
+
+/* symbol */
+
+#symbol {
+    height: 100%;
+    width: 100%;
+    background: #f0f4fc;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.core__value__box{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+.core__value{
+    font-size: 50px;
+}
+
+
+
+
+
+main.cards {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    padding: 32px;
+    justify-content: space-around;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-left: 32px;
+    width: 400px;
+    height: 400px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+.icon {
+    height: 170px;
+    width: 170px;
+    line-height: 170px;
+    font-size: 80px;
+    color: transparent;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+
+.strategic .icon{
+    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+    -webkit-background-clip: text;
+    border: 1px solid linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+
+.creative .icon{
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    -webkit-background-clip: text;
+}
+
+.effective .icon{
+    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+    -webkit-background-clip: text;
+}
+
+
+main.cards section.card img {
+    width: 100%;
+}
+
+.symbol__title{
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.symbol__description{
+    font-size: 16px;
+}
+
+
+
+
+main.cards section.card.strategic button {
+    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+main.cards section.card.creative button {
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+main.cards section.card.effective button {
+    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+}
+
+main.cards section.card.strategic {
+    box-shadow: 20px 20px 50px -10px #DBC4FF;
+}
+main.cards section.card.creative {
+    box-shadow: 20px 20px 50px -10px #AFD6FF;
+}
+main.cards section.card.effective {
+    box-shadow: 20px 20px 50px -10px #FFC1D5;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}
+
+
+
+
+/* 조직도 */
+
+
+#organization__chart {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.organization__chart__box{
+    margin-top: 60px;
+    height: 100%;
+}
+
+.organization__chart__title{
+    font-size: 50px;
+}
+
+.organization__chart__introduce{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.org_chart{
+    max-width:62.5%; 
+    height:auto;
+    margin: auto;
+    
+}
+
+/* partner */
+
+
+#aboutus__page__partner{
+    height: 100%;
+    width: 100%;
+    background: #20202d;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 130px;
+}
+
+
+.aboutus__page__width__container{
+    margin: auto;
+    max-width: 1400px;
+    
+}
+
+.aboutus__page__partner__title, .aboutus__page__partner__sub__title{
+    color: white;
+    margin-left: 90px;
+}
+
+.aboutus__page__partner__title{
+    font-size: 43px;
+    margin-top: 100px;
+}
+
+.aboutus__page__partner__sub__title{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.aboutus__page__partner_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    font-weight: bold;
+    
+    
+}
+
+
+/*border 겹침 현상 때문에 box-shadow를 넣었다.*/
+
+.aboutus__page__partner_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 
+    8px 0 0 0 #20202d, 
+    0 8px 0 0 #20202d, 
+    8px 8px 0 0 #20202d,
+    8px 0 0 0 #20202d inset, 
+    0 8px 0 0 #20202d inset;
+    margin: 0;
+    width: 250px;
+    height: 200px;
+    background-color: black;
+    border: 8px solid var(#20202d);
+    opacity: 0.8;
+}
+
+
+.aboutus__page__partner__img{
+    display: inline-block;
+    object-fit:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
