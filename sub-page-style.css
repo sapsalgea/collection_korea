@@ -1,0 +1,124 @@
+/* Global */
+
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+  
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+  
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+
+    /* Size */
+    --size-border-radius : 4px;
+
+    /*Annimation*/
+    --animation-duration: 300ms;
+  }
+
+
+#top__intro{
+    background: url("imgs/background.jpg") center/cover no-repeat;
+    padding-top: 210px;
+    text-align: center;
+    height: 500px;
+}
+
+.top__title{
+    color: white;
+    font-size: 4vw;
+}
+
+.top__sub__title{
+    color: var(--color-light-grey);
+    font-size: 2vw;
+}
+
+#business{
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+
+
+.business__sub__title{
+    color: var(--color-light-grey);
+    font-size: 1.2vw;
+    margin-top: 30px;
+}
+
+
+.business__title{
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-bottom: 100px;
+    
+}
+
+
+
+.business_items{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    font-weight: bold;
+    
+    
+}
+
+/*border 겹침 현상 때문에 box-shadow를 넣었다.*/
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 
+    2px 0 0 0 #ececec, 
+    0 2px 0 0 #ececec, 
+    2px 2px 0 0 #ececec,
+    2px 0 0 0 #ececec inset, 
+    0 2px 0 0 #ececec inset;
+    margin: 0;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    border: 1px solid var(#ececec);
+}
+
+.project__name{
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.project__img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
